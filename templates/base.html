@@ -1,9 +1,60 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% load static %}
 
-</head>
-<body>
-    working!
-</body>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="피아노 즉흥 연주를 배울 수 있는 사이트입니다.">
+        <meta name="author" content="정현호">
+        <title>{% block title %}{% endblock %}</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpg" href="{% static 'assets/icons/logo.jpg' %}">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="{{ root }}">피아노배워</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="{{ root }}">홈페이지</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ root }}about">이용 가이드</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ root }}resources/">학습 자원</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ root }}credit/">크레딧</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% block content %}{% endblock content %}
+        <!-- Survey -->
+        <section class="bg-light py-3">
+            <div class="container px-5 my-4 px-5">
+                <div class="text-center mb-5">
+                    <div class="simple-icon bg-purple bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                    <h2 class="fw-bolder">피드백을 남겨주세요</h2>
+                    <p class="lead">2~4분 정도의 설문지입니다</p>
+                    <a class="text-decoration-none" href="https://forms.gle/5Kt4ifB3thRVCJJ56" target="_blank" rel="noopener noreferrer">
+                        설문조사 작성하기
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Pianobaewo 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+    </body>
 </html>

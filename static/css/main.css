@@ -1,0 +1,17 @@
+.simple-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    padding: 3%;
+  }
+  
+  .icon-white {
+    filter: brightness(0) invert(100%) 
+  }
+  
+  .bg-purple {
+    background-color: #662d91
+  }

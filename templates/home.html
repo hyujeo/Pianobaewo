@@ -1,1 +1,58 @@
-working homepage
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}피아노배워{% endblock title %}
+
+{% block content %}
+<!-- Header -->
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">피아노 즉흥 연주를 배워보세요.</h1>
+                    <p class="lead text-white-50 mb-4">곡을 듣고 악보 없이 피아노 커버를 만들거나, 코드만 갖고 자유롭게 반주하는 방법을 소개하고 연습할 수 있게 돕는 사이트입니다. </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#course-selection">배울 영역 선택하기</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="{{ root }}about/">도움말 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Course Selection -->
+<section class="py-5 border-bottom" id="course-selection">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="simple-icon bg-primary bg-gradient rounded-3 mb-3"><img src="{% static 'assets/icons/treble-icon.png' %}" class="icon-white img-fluid"></div> 
+                <h2 class="h4 fw-bolder">기본 개념</h2>
+                <p>코드의 이해, 청음 연습, 각종 주법의 테크닉 등에 대해 다룹니다.</p>
+                <a class="text-decoration-none" href="{{ root }}basic/">
+                    기본 개념 시작하기
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="simple-icon bg-primary bg-gradient rounded-3 mb-3"><img src="{% static 'assets/icons/mic-icon.jpg' %}" class="icon-white img-fluid"></div> 
+                <h2 class="h4 fw-bolder">반주</h2>
+                <p>코드를 바탕으로 다양한 분위기와 장르의 노래를 반주하는 방법을 다룹니다.</p>
+                <a class="text-decoration-none" href="{{ root }}comp/">
+                    반주 시작하기
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <div class="simple-icon bg-primary bg-gradient rounded-3 mb-3"><img src="{% static 'assets/icons/piano-icon.jpg' %}" class="icon-white img-fluid"></div>
+                <h2 class="h4 fw-bolder">커버</h2>
+                <p>노래를 듣고 어울리는 느낌의 피아노 커버를 하는 방법을 다룹니다.</p>
+                <a class="text-decoration-none" href="{{ root }}cover/">
+                    커버 시작하기
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

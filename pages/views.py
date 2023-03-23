@@ -3,6 +3,7 @@ from time import sleep
 
 context = {"root": "http://127.0.0.1:8000/"}
 # http://hyunhoj84.pythonanywhere.com/
+# http://127.0.0.1:8000/
 
 # Create your views here.
 def home(request):

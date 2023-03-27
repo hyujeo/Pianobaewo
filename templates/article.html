@@ -1,5 +1,17 @@
 {% load static %}
 
+<!-- 
+
+<figure class="mb-4"><img class="img-fluid rounded" src=""></figure>
+<section class="mb-5">
+    <p class="fs-5 mb-4">
+        
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5"></h2>
+</section> 
+
+-->
+
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -33,7 +45,47 @@
                 </div>
             </div>
         </nav>
-        {% block content %}{% endblock content %}
+        <!-- Article -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="px-3">
+                        <!-- Header -->
+                        <header class="mb-4">
+                            <h1 class="fw-bolder mb-1">{% block header %}{% endblock header %}</h1>
+                        </header>
+                        {% block content %}{% endblock content %}
+                    </article>
+                </div>
+                <!-- Side/bottom widgets -->
+                <div class="col-lg-4">
+                    <!-- Next/previous lesson -->
+                    <div class="card mb-4">
+                        <div class="card-header">길찾기</div>
+                        <div class="card-body text-center">
+                            <a class="btn btn-outline-primary btn-lg px-4 mx-3" href="{{root}}{% block prev %}{% endblock prev %}">이전 강좌</a>
+                            <a class="btn btn-primary btn-lg px-4 mx-3" href="{{root}}{% block next %}{% endblock next %}">다음 강좌</a>
+                        </div>
+                    </div>
+                    <!-- Jump to other areas -->
+                    <div class="card mb-4">
+                        <div class="card-header">다른 영역</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-3"><a href="{{root}}basic">기본 개념</a></li>
+                                        <li class="mb-3"><a href="{{root}}comp">반주</a></li>
+                                        <li class="mb-3"><a href="{{root}}cover">커버</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Article End -->
         <!-- Survey -->
         <section class="bg-light py-3">
             <div class="container px-5 my-4 px-5">

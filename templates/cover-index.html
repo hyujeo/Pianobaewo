@@ -3,3 +3,35 @@
 
 {% block title %}커버 강좌 목록{% endblock title %}
 
+{% block content %}
+<section class="bg-light py-5 border-bottom">
+    <div class="container px-3 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">커버 강좌 목록</h2>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- Card -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">용도 미정</div>
+                        <div class="mb-3">
+                            <span class="display-6 fw-bold">코드의 이해</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                                <a class="clean-a" href="">something</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="">something</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card end -->
+        </div>
+    </div>
+</section>
+{% endblock content %}
+

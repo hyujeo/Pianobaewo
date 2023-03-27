@@ -1,4 +1,94 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}기본 개념 강좌{% endblock title %}
+{% block title %}기본 개념 강좌 목록{% endblock title %}
+
+{% block content %}
+<section class="bg-light py-5 border-bottom">
+    <div class="container px-3 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">기본 이론 강좌 목록</h2>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- 코드 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">이론</div>
+                        <div class="mb-3">
+                            <span class="display-6 fw-bold">코드의 이해</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}chord-triad">코드의 뜻과 3화음</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}chord-inversion">코드의 자리바꿈(전위)</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}chord-seven">7화음</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}chord-more">추가적인 코드</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 코드/ -->
+            <!-- 청음 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">스킬</div>
+                        <div class="mb-3">
+                            <span class="display-6 fw-bold">청음 훈련</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}ear-intro">청음이란?</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}ear-key">키 찾기</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}ear-interval">상대음감과 인터벌 훈련</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}ear-chord">코드 찾기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 청음/ -->
+            <!-- 테크닉 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">테크닉</div>
+                        <div class="mb-3">
+                            <span class="display-6 fw-bold">기본 테크닉</span>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}tech-intro">피아노 테크닉의 기본</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}tech-scale">스케일 연습</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}tech-arpeggio">아르페지오 연습</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="clean-a" href="{{root}}tech-tremolo">연타(트레몰로) 연습</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 테크닉/ -->
+        </div>
+    </div>
+</section>
+{% endblock content %}

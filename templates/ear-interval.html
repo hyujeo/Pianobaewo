@@ -1,0 +1,28 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}코드의 뜻과 3화음{% endblock title %}
+{% block header %}코드의 뜻과 3화음{% endblock header %}
+
+{% block prev %}basic{% endblock prev %}
+{% block next %}chord-seven{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 mb-4">
+        코드란 2개 이상의 음이 모여 내는 음을 의미합니다. 한국어론 화음이라고도 하는데, 이 강좌에선 두 단어를 번갈아 가며 사용합니다. 
+        저희가 처음 알아볼 코드는 3화음(triad)입니다. 3화음은 근음에서 3도와 5도를 쌓아 만드는 화음으로, 실용음악의 기초가 되는 화음입니다.
+    </p>
+    <p class="fs-6 mb-4">
+        3, 5도와 같은 표현이 어색하시다면 <a href="{{root}}ear-interval">음정</a>에 관한 강좌를 먼저 보시길 바랍니다.
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5">메이저 코드(장3화음)</h2>
+    <p class="fs-6 mb-4">
+        메이저 코드는 메이저 음계에서 근음, 3도, 5도를 사용하여 만드는 화음입니다. 단독으로 들었을 때 밝은 느낌을 줍니다. 장3화음이라고도 하는데, 실제 코드북이나 음악 이론에선 메이저 코드와 같은 영어식 표현으로 읽을 경우가 더 많으므로 
+        영어식으로 표기하였습니다.
+    </p>
+    <p class="fs-6 mb-4">
+        아래 이미지는 C 메이저 스케일의 근음인 C, 3도인 E, 5도인 G를 사용해 만든 C 메이저 코드입니다. 
+    </p>
+</section> 
+{% endblock content %}

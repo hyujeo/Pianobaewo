@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
-context = {"root": "http://127.0.0.1:8000/"}
-# http://hyunhoj84.pythonanywhere.com/
-# http://127.0.0.1:8000/
+context = {"root": "http://hyunhoj84.pythonanywhere.com/"}
+#context = {"root": "http://127.0.0.1:8000/"}
 
 # Create your views here.
 def home(request):
@@ -13,9 +12,6 @@ def about(request):
 
 def resources(request):
     return render(request, "resources.html", context)
-
-def credit(request):
-    return render(request, "credit.html", context)
 
 def basic(request):
     return render(request, "basic-index.html", context)
@@ -80,8 +76,8 @@ def left_arpeggio(request):
 def left_alternate(request):
     return render(request, 'left-alternate.html', context)
 
-def transcribe_key(request):
-    return render(request, 'transcribe-key.html', context)
+def left_basstranscribe_key(request):
+    return render(request, 'left-basstranscribe-key.html', context)
 
 def transcribe_interval(request):
     return render(request, 'transcribe-interval.html', context)
@@ -92,8 +88,11 @@ def transcribe_chord(request):
 def melody_ornament(request):
     return render(request, 'melody-ornament.html', context)
 
-def melody_octave(request):
-    return render(request, 'melody-octave.html', context)
+def melody_3(request):
+    return render(request, 'melody-3.html', context)
+
+def melody_6(request):
+    return render(request, 'melody-6.html', context)
 
 def lh_bass(request):
     return render(request, 'lh-bass.html', context)

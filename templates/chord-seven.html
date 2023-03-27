@@ -1,0 +1,26 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}7화음{% endblock title %}
+{% block header %}7화음(7th 코드){% endblock header %}
+
+{% block prev %}chord-triad{% endblock prev %}
+{% block next %}chord-seven{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 mb-4">
+        7화음은 이전에 배운 3화음에 7도 음정을 얹어서 만드는 코드입니다. 단순한 3화음보다 더 풍성하고 복잡한 감정을 불러일으킬 수 있기 때문에
+        실용음악부터 재즈까지 널리 쓰이는 코드입니다. 
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5">메이저 7th 코드</h2>
+    <p class="fs-6 mb-4">
+        메이저 7th 코드는 메이저 코드에 메이저 음계의 7도를 더하여 만드는 화음입니다. 메이저와 마찬가지로 밝지만, 
+    </p>
+    <p class="fs-6 mb-4">
+        아래 이미지는 C 메이저 코드에 C 메이저 음계의 7도인 B를 더하여 만든 C 메이저 7 코드입니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/cmajor7.png' %}"></figure>
+
+</section> 
+{% endblock content %}

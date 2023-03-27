@@ -8,24 +8,58 @@
 {% block next %}chord-seven{% endblock next %}
 
 {% block content %}
-<!-- Figure -->
-<figure class="mb-4"><img class="img-fluid rounded" src=""></figure>
-<!-- Content -->
 <section class="mb-5">
-    <p class="fs-5 mb-4">
-
-    </p>
-    <h2 class="fw-bolder mb-4 mt-5"></h2>
-</section> 
-
-<section class="mb-5">
-    <p class="fs-5 mb-4">
+    <p class="fs-6 mb-4">
         코드란 2개 이상의 음이 모여 내는 음을 의미합니다. 한국어론 화음이라고도 하는데, 이 강좌에선 두 단어를 번갈아 가며 사용합니다. 
-        저희가 처음 알아볼 코드는 3화음(triad)입니다. 3화음은 근음에서 3도와 5도를 쌓아 만드는 화음으로, 실용음악의 기초가 되는 화음입니다. 
+        저희가 처음 알아볼 코드는 3화음(triad)입니다. 3화음은 근음에서 3도와 5도를 쌓아 만드는 화음으로, 실용음악의 기초가 되는 화음입니다.
     </p>
-    <h2 class="fw-bolder mb-4 mt-5">3화음</h2>
-    <p class="fs-5 mb-4">
+    <p class="fs-6 mb-4">
+        3, 5도와 같은 표현이 어색하시다면 <a href="{{root}}ear-interval">음정</a>에 관한 강좌를 먼저 보시길 바랍니다.
     </p>
-    <h2 class="fw-bolder mb-4 mt-5"></h2>
+    <h2 class="fw-bolder mb-4 mt-5">메이저 코드(장3화음)</h2>
+    <p class="fs-6 mb-4">
+        메이저 코드는 메이저 음계에서 근음, 3도, 5도를 사용하여 만드는 화음입니다. 단독으로 들었을 때 밝은 느낌을 줍니다. 장3화음이라고도 하는데, 실제 코드북이나 음악 이론에선 메이저 코드와 같은 영어식 표현으로 읽을 경우가 더 많으므로 
+        영어식으로 표기하였습니다.
+    </p>
+    <p class="fs-6 mb-4">
+        아래 이미지는 C 메이저 스케일의 근음인 C, 3도인 E, 5도인 G를 사용해 만든 C 메이저 코드입니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/cmajor.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        마찬가지로 D 메이저 스케일에서도 근음인 D, 3도인 F#, 5도인 A를 사용해 D 메이저 코드를 만들 수 있습니다.
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/dmajor.png' %}"></figure>
+    
+    <h2 class="fw-bolder mb-4 mt-5">마이너 코드(단3화음)</h2>
+    <p class="fs-6 mb-4">
+        마이너 코드는 마이너 음계에서 근음, 3도, 5도를 사용하여 만드는 화음입니다. 단독으로 들었을때 어두운 느낌을 줍니다.
+    </p>
+    <p class="fs-6 mb-4">
+        아래 이미지는 C 마이너 스케일의 근음인 C, 3도인 E, 5도인 G를 사용해 만든 C 마이너 코드입니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/cminor.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        이 마이너 코드는 잘 보면 메이저 코드에서 3도에 플랫을 준 것과 같은 형태인 것을 알 수 있습니다. 따라서 처음 연습할 때엔 이것을 염두에 두고
+        연주하시면 쉽게 마이너 코드를 손에 익힐 수 있습니다.
+    </p>
+
+    <h2 class="fw-bolder mb-4 mt-5">연습법</h2>
+    <p class="fs-6 mb-4">
+        코드 중 가장 중요한 메이저와 마이너 코드는 숨쉬듯 자연스럽게 칠 수 있을 정도로 익숙해지셔야합니다. 모든 키에서 두 코드를 숙달할 수 있게
+        각 코드를 C에서 시작해 한 키씩 올리고 내리면서 연습하세요. 이것이 익숙해졌다면 임의의 키를 생각하자마자 바로 피아노에 구현 할 수 있게 연습해보세요.
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/majminprac.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        굉장히 샵이 많아보이지만, 사실 악보로 표현하여 난해해보이는 것 뿐, 실제론 그저 같은 모양을 한 키씩 올리는 것에 지나지 않습니다. 즉흥 연주를 악보에 옮기면 이렇게
+        복잡해보이고 즉흥으로 생각하기 힘들어보이지만, 그 원리를 뜯어보면 사실 이 예시처럼 굉장히 단순한 경우가 많습니다. 
+    </p>
+    <p class="fs-6 mb-4">
+        피아노배워의 모든 강좌는 이와 비슷한 방향성으로 연습을 진행해주시면 됩니다. 어떠한 개념이나 패턴을 익혔다면, 그것을 모든 키에서, 또는 여러가지 노래를 대상으로 적용하여 
+        자신의 것으로 만드는 연습이 항상 진행되어야 합니다.
+    </p>
+    <p class="fs-6 mb-4">
+        모든 키를 연습하는 일은 굉장히 힘들고 지루할 수 있지만, 그것을 극복하면 즉흥연주에 있어 훨씬 자유로워지는 경험을 하실 수 있을겁니다.
+    </p>
+
 </section> 
 {% endblock content %}

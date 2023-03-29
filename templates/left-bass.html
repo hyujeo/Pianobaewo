@@ -1,0 +1,28 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}왼손의 베이스{% endblock title %}
+{% block header %}왼손의 베이스{% endblock header %}
+
+{% block prev %}left-arpeggio{% endblock prev %}
+{% block next %}comp{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 fs-xl-5 mb-4">
+        이번엔 왼손으로 베이스 라인을 그리는 연습을 해보겠습니다. 실용음악에서의 베이스 기타, 재즈의 콘트라베이스를 흉내내는 이 방법은 반주의 구심점을 잡아주고 멜로디가 더욱 돋보이게 해주는
+        좋은 장치 중 하나입니다. 코드 음들을 중심 삼아 스케일 내에 있는 음들을 연주하면 괜찮은 수준의 베이스라인을 만들 수 있습니다.
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creepleftbass.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        여기서 리듬의 변화를 조금만 주어도 매우 다양한 분위기의 마치 제 2의 멜로디같은 베이스라인이 나오게 됩니다.
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creepleftbass2.png' %}"></figure>
+    <h2 class="fw-bolder mb-4 mt-5">연습법</h2>
+    <p class="fs-6 mb-4">
+        좋아하는 노래 몇가지를 사용해서 위와 같이 베이스라인를 이용한 반주를 해보세요. 오른손과 같이 할 경우 처음엔 매우 헷갈릴 수 있으니, 노래를 틀어놓고 우선 왼손으로만 정박에만 음을 연주해서
+        간단한 베이스를 만드는 것에 익숙해진 뒤, 변칙적인 리듬을 시도해 익숙해 진 뒤 지금까지 배운 오른손 기술을 응용해 보세요. 베이스라인에 전통적으로 어울리는 방식은 블럭 코드이지만, 
+        쿵짝이나 아르페지오도 약간의 리듬의 변형을 통해 여러가지 반주를 만들어낼 수 있습니다.
+    </p>
+</section> 
+{% endblock content %}

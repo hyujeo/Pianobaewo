@@ -1,0 +1,39 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}오른손의 아르페지오{% endblock title %}
+{% block header %}오른손의 아르페지오{% endblock header %}
+
+{% block prev %}root-alternate{% endblock prev %}
+{% block next %}comp{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 fs-xl-5 mb-4">
+        이번엔 오른손으로 아르페지오, 즉 분산된 화음을 연주하는 패턴을 연습해보겠습니다. 엄밀히 말하면 아르페지오는 일정하게 상승 또는 하강만을 하는 움직임을 의미하지만, 넓은 의미에선 
+        코드를 음별로 나누어 따로 연주하는 의미도 포함합니다. 
+    </p>
+    <p class="fs-6 mb-4">
+        우선 크립의 기본적인 코드를 다시 보도록 하죠. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeproot.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        크립의 코드들을 구성하는 3개의 음을 쪼개어 따로 연주해보겠습니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeprootarp.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        여기서 간단하게 리듬을 바꾸거나, 음의 순서를 바꾸는 등의 방법으로 더욱 다채로운 연주를 할 수 있습니다. 여기선 음의 순서를 바꾸고, 또 한 옥타브 아래나 위의
+        음들도 써가면서 같은 리듬을 사용했습니다. 개개인의 취향에 따라, 더 빠른 리듬으로 연주하여 긴박함을, 계속 올라가는 상향 아르페지오를 통해서 분위기의 고조를 연출할 수 
+        있는 매우 유용한 기법입니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeprootarp2.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        이렇게 이미 아는 손 모양을 이용해서 음을 분산시키기만 해도 루트 포지션보다 더 발전된 연주가 가능합니다. 
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5">연습법</h2>
+    <p class="fs-6 mb-4">
+        좋아하는 노래 몇가지를 사용해서 위와 같이 근음과 아르페지오를 이용한 반주를 해보세요. 어느정도 익숙해진 후엔 아른 인버젼 포지션에서, 또는 완전히 한 포지션을 벗어나 자유롭게
+        코드 음들을 쳐보도록 하세요. 모든 박에 음을 연주할 필요는 없습니다. 어떤 부분은 빠르게, 어떤 부분은 잠시 쉼표를 주면서 여러 리듬을 실험해보세요. 
+    </p>
+</section> 
+{% endblock content %}

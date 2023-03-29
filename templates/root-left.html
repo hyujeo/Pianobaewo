@@ -1,0 +1,36 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}근음과 코드{% endblock title %}
+{% block header %}근음과 코드{% endblock header %}
+
+{% block prev %}comp{% endblock prev %}
+{% block next %}root-inversion{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 mb-4">
+        첫번째 과정은 근음을 왼손으로, 코드를 오른손으로 치면서 진행하는 것입니다. 이 방법만으로도 다양한 리듬을 사용하며 
+        다채로운 공연을 할 수 있기 때문에 기초이지만 굉장히 효과적인 반주 패턴 중 하나입니다. 
+    </p>
+    <p class="fs-6 mb-4">
+        우선 라디오헤드의 "크립"이라는 노래를 이용해 예시를 보여드리겠습니다. 크립은 G-B-C-Cm의 코드 진행을 가진 곡인데, 우선은 단순하게
+        왼손으로 코드의 근음을, 오른손으로 코드의 기본 포지션을 연주해보겠습니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeproot.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        이정도만 해도 듣기 좋지만, 계속 이렇게만 친다면 매우 단조롭겠죠. 그렇다면 리듬을 바꿔서 한번 연주해보겠습니다. 처음 연주해본다면 어색할 수 있으나, 팝의 기본이 되는 리듬이므로
+        익혀놓는다면 언제나 꺼내 쓸 수 있는 좋은 도구가 될 것입니다.
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeproot2.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        훨씬 아름답게 들리는 것을 확인할 수 있습니다. 이렇게 간단한 리듬감의 변화를 주면 정박으로 치는 것보다 더 발전된 연주가 가능합니다. 여기서 같은 박자에 음을 연주한다고 해도 
+        강세를 첫 박에 주거나, 중간 박에 주거나, 끝 박에 주는 등의 리듬적인 변화를 주면 더욱 더 다채롭고 흥미로운 연주가 가능해집니다. 
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5">연습법</h2>
+    <p class="fs-6 mb-4">
+        좋아하는 노래 몇가지를 사용해서 위와 같이 근음과 코드를 이용한 반주를 해보세요. 어느정도 익숙해진 후엔 노래를 다른 키에서 연주해보기도 하고, 더욱 복잡한 코드진행을 가진 
+        노래를 연습해볼 수도 있습니다. 다양한 리듬감을 실험해보고 제각각 주는 미묘하게 다른 느낌을 기억하세요.
+    </p>
+</section> 
+{% endblock content %}

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-context = {"root": "http://hyunhoj84.pythonanywhere.com/"}
-#context = {"root": "http://127.0.0.1:8000/"}
+#context = {"root": "http://hyunhoj84.pythonanywhere.com/"}
+context = {"root": "http://127.0.0.1:8000/"}
 
 # Create your views here.
 def home(request):
@@ -76,8 +76,11 @@ def left_arpeggio(request):
 def left_alternate(request):
     return render(request, 'left-alternate.html', context)
 
-def left_basstranscribe_key(request):
-    return render(request, 'left-basstranscribe-key.html', context)
+def left_bass(request):
+    return render(request, 'left-bass.html', context)
+
+def transcribe_key(request):
+    return render(request, 'transcribe-key.html', context)
 
 def transcribe_interval(request):
     return render(request, 'transcribe-interval.html', context)

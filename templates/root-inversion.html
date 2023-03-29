@@ -1,0 +1,35 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}오른손의 인버젼{% endblock title %}
+{% block header %}오른손 코드의 인버젼{% endblock header %}
+
+{% block prev %}root-left{% endblock prev %}
+{% block next %}root-alternate{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 fs-xl-5 mb-4">
+        이번엔 오른손으로 아르페지오, 즉 분산된 화음을 연주하는 패턴을 연습해보겠습니다. 엄밀히 말하면 아르페지오는 일정하게 상승 또는 하강만을 하는 움직임을 의미하지만, 넓은 의미에선 
+        코드를 음별로 나누어 따로 연주하는 의미도 포함합니다. 
+    </p>
+    <p class="fs-6 mb-4">
+        우선 크립의 기본적인 코드를 다시 보도록 하죠. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeproot.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        이정도만 해도 듣기 좋지만, 오른손이 너무 크게 움직인다는 단점이 있습니다. 또, 인버젼이 되지 않은 기본 포지션만 치면 단조롭게 들리는 경향이 있죠. 
+        따라서 우린 배운대로 코드 중 몇개를 인버젼시켜보겠습니다. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeprootinv.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        훨씬 아름답게 들리는 것을 확인할 수 있습니다. 이렇게 인버젼만 시켜도 루트 포지션보다 더 발전된 연주가 가능합니다. 여기서 왼손과 오른손을 한 박에 한 번만 치는 것이 아니라
+        한 박에 여러번 치는 등의 리듬적인 변화를 주면 상당히 전문적인 연주가 가능해집니다. 
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5">연습법</h2>
+    <p class="fs-6 mb-4">
+        좋아하는 노래 몇가지를 사용해서 위와 같이 근음과 아르페지오를 이용한 반주를 해보세요. 어느정도 익숙해진 후엔 아른 인버젼 포지션에서, 또는 완전히 한 포지션을 벗어나 자유롭게
+        코드 음들을 쳐보도록 하세요. 모든 박에 음을 연주할 필요는 없습니다. 어떤 부분은 빠르게, 어떤 부분은 잠시 쉼표를 주면서 여러 리듬을 실험해보세요. 
+    </p>
+</section> 
+{% endblock content %}

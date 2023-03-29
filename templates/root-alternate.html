@@ -1,0 +1,36 @@
+{% extends 'article.html' %}
+{% load static %}
+
+{% block title %}오른손 쿵짝 리듬{% endblock title %}
+{% block header %}오른손 쿵짝 리듬{% endblock header %}
+
+{% block prev %}root-inversion{% endblock prev %}
+{% block next %}root-arpeggio{% endblock next %}
+
+{% block content %}
+<section class="mb-5">
+    <p class="fs-6 mb-4">
+        이번 과정은 근음을 왼손으로 하되, 오른손으로 새로운 리듬을 연주해보는 것입니다. 한 박을 둘로 나누어 코드의 윗쪽 음들을 먼저 치고, 가장 아래 음을 나중에 치면
+        쿵짝쿵짝 하는 리듬을 만들 수 있습니다. 메이저 키 곡에서 리듬감을 부여해 신남을 극대화시키고, 마이너 키 곡에선 음울한 교회 종소리를 연상시키는
+        슬픈 분위기를 연출할 수 있습니다. 
+    </p>
+    <p>
+        우선 크립의 기본적인 코드를 다시 보도록 하죠. 
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeproot.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        이제 쿵짝 리듬 (얼터네이팅, 기타 스트럼 등의 다른 이름들이 있지만 쿵짝리듬이 직관적인 이름이라 생각합니다)을 활용해보겠습니다.
+    </p>
+    <figure class="mb-4"><img class="img-fluid rounded" src="{% static 'assets/figure/creeprootalt.png' %}"></figure>
+    <p class="fs-6 mb-4">
+        쿵짝리듬에선 윗쪽 소리를 강조해주는 것이 좋습니다. 만약 2번째 박자에 강조를 주어 불안정한 리듬을 연출하고 싶다면, 위엔 음 하나, 밑에 나머지 음들을 치는 방식도
+        효과적입니다.
+    </p>
+    <h2 class="fw-bolder mb-4 mt-5">연습법</h2>
+    <p class="fs-6 mb-4">
+        좋아하는 노래 몇가지를 사용해서 위와 같이 근음과 쿵짝을 이용한 반주를 해보세요. 어느정도 익숙해진 후엔 앞소리가 아닌 뒷소리를 강조해보기도 하고, 음의 배치를 바꾸거나 가운데 음을 나중에 치는 등의
+        변칙을 시도해 보고, 각각이 주는 다른 느낌을 기억해보세요. 즉흥 연주를 하면서 그때그때 원하는 분위기를 연출하려면 이런 다양한 도구를 갖고 있는 것이
+        매우 큰 도움이 됩니다.
+    </p>
+</section> 
+{% endblock content %}

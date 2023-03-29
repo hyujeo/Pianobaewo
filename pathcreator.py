@@ -3,12 +3,11 @@ pathlist = ["chord-triad", "chord-seven", "chord-inversion", "chord-more",
             "ear-intro", "ear-key", "ear-interval", "ear-chord",
 
             "root-left", "root-inversion", "root-alternate", "root-arpeggio",
-            "left-arpeggio", "left-alternate", "left-bass"
+            "left-arpeggio", "left-alternate", "left-bass",
 
             "transcribe-key", "transcribe-interval", "transcribe-chord",
             "melody-ornament", "melody-3", "melody-6",
             "lh-bass", "lh-leap", "lh-arpeggio",
-            "three4-basic", "three4-waltz",
 ]
 
 print("\n\n\nURL\n")
